@@ -1,10 +1,11 @@
+/* Estilo para el menú lateral */
 .menu-lateral {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 250px;
-  background-color: #f8f9fa;
+  background-color: #8097b9;
   padding-top: 60px;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
@@ -15,6 +16,7 @@
   transform: translateX(0);
 }
 
+/* Fondo oscuro para cerrar el menú */
 .overlay {
   position: fixed;
   top: 0;
@@ -30,10 +32,66 @@
   display: block;
 }
 
-.content {
-  padding: 20px;
+/* Estilo para la imagen de fondo y el texto sobre ella */
+.hero-section {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-body {
-  background-color: grey;
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Superposición oscura para la imagen */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Ajusta la opacidad según lo oscuro que quieras */
+  z-index: 2;
+}
+
+/* Estilo del texto sobre la imagen */
+.hero-text {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 3;
+}
+
+/* Estilo para el menú y el título que están encima de la imagen */
+.hero-header {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+}
+
+.hero-header i {
+  cursor: pointer;
+}
+
+.hero-header h1 {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+.content {
+  padding: 20px;
 }
