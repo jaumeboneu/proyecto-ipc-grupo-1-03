@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TFG - Facultad de Informática UPV/EHU</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Icono de menú -->
+  <div class="d-flex align-items-center p-3">
+    <i class="bi bi-list fs-2" onclick="toggleMenu()" style="cursor: pointer;"></i>
+    <h1 class="ms-3 fs-4">TFG - Facultad de Informática</h1>
+  </div>
+
+  <!-- Menú lateral -->
+  <div id="menu" class="menu-lateral">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#">Información</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#">Autoevaluación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#">About Us</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Fondo oscuro para cerrar el menú -->
+  <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+  <!-- Contenido principal -->
+  <div class="content">
+    <h2>Bienvenido a la Página del TFG</h2>
+    <p>
+      Esta página ofrece toda la información necesaria para entender y realizar con éxito el Trabajo Fin de Grado en la Facultad de Informática de la UPV/EHU. Aquí encontrarás guías, recursos, y un área de autoevaluación para ayudarte en cada etapa del proceso.
+    </p>
+  </div>
+
+  <!-- JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript personalizado -->
+  <script src="scripts.js"></script>
+
+</body>
+</html>
