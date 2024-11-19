@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- Menú y Título sobre la imagen -->
@@ -42,7 +44,8 @@
 
   <!-- Sección de bienvenida con imagen de fondo y texto centrado -->
   <div class="hero-section">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Informatika_fakultatea_001.JPG" alt="Fondo TFG" class="hero-image">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Informatika_fakultatea_001.JPG" alt="Fondo TFG"
+      class="hero-image">
     <div class="hero-overlay"></div>
     <div class="hero-text">
       <h1>Sitio Web sobre TFG</h1>
@@ -52,10 +55,60 @@
   <!-- Contenido principal -->
   <div class="content">
     <h2>Bienvenido a la Página del TFG</h2>
-    <p>
-      Esta página ofrece toda la información necesaria para entender y realizar con éxito el Trabajo Fin de Grado en la Facultad de Informática de la UPV/EHU. Aquí encontrarás guías, recursos, y un área de autoevaluación para ayudarte en cada etapa del proceso.
+    <p class="text">
+      Esta página ofrece toda la información necesaria para entender y realizar con éxito el Trabajo Fin de Grado en la
+      Facultad de Informática de la UPV/EHU. Aquí encontrarás guías, recursos, y un área de autoevaluación para ayudarte
+      en cada etapa del proceso.
     </p>
+    <h4><strong>Apartados</strong></h4>
+
+    <div class="container my-5">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <img src="/images/Normativa.jpg" alt="Imagen 1" class="img-fluid rounded">
+          <a href="Normativa.html">
+            <p class="mt-2">Normativa</p>
+          </a>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <img src="/images/Inscripcion.jpg" alt="Imagen 1" class="img-fluid rounded">
+          <a href="Normativa.html">
+            <p class="mt-2">Matriculación e Inscripción</p>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+
+          <img src="/images/Calendario.png" alt="Imagen 2" class="img-fluid rounded">
+
+          <a href="Normativa.html">
+            <p class="mt-2">Calendario de Convocatorias</p>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+
+          <img src="/images/TFGAnteriores.jpg" alt="Imagen 3" class="img-fluid rounded">
+
+          <a href="Normativa.html">
+            <p class="mt-2">TFG Anteriores</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer mt-auto py-3">
+      <hr>
+      <div class="container text-center">
+          <span>informaciontfg@upv.ehu.eus</span> &nbsp; | &nbsp; <span>+34 673 08 91 13</span>
+      </div>
+  </footer>
+
   </div>
+
+
 
   <!-- JavaScript de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -63,4 +116,5 @@
   <script src="scripts.js"></script>
 
 </body>
+
 </html>
