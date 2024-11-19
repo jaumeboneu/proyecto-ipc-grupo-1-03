@@ -2,118 +2,114 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TFG - Facultad de Informática UPV/EHU</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFG - Facultad de Informática UPV/EHU</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- Menú y Título sobre la imagen -->
-  <div class="hero-header">
+<!-- Menú y Título sobre la imagen -->
+<div class="hero-header">
     <i class="bi bi-list fs-2" onclick="toggleMenu()" style="cursor: pointer;"></i>
     <h1 class="text-white fs-2 ms-3">Información TFG</h1>
-  </div>
+</div>
 
-  <!-- Menú lateral -->
-  <div id="menu" class="menu-lateral">
+<!-- Menú lateral -->
+<div id="menu" class="menu-lateral">
     <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="#">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="#">Información</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="#">Autoevaluación</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="#">About Us</a>
-      </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="informacion.html">Información</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Autoevaluación</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="AboutUs.html">About Us</a>
+        </li>
     </ul>
-  </div>
+</div>
 
-  <!-- Fondo oscuro para cerrar el menú -->
-  <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+<!-- Fondo oscuro para cerrar el menú -->
+<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
 
-  <!-- Sección de bienvenida con imagen de fondo y texto centrado -->
-  <div class="hero-section">
+<!-- Sección de bienvenida con imagen de fondo y texto centrado -->
+<div class="hero-section">
     <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Informatika_fakultatea_001.JPG" alt="Fondo TFG"
-      class="hero-image">
+         class="hero-image">
     <div class="hero-overlay"></div>
     <div class="hero-text">
-      <h1>Sitio Web sobre TFG</h1>
+        <h1>Sitio Web sobre TFG</h1>
     </div>
-  </div>
+</div>
 
-  <!-- Contenido principal -->
-  <div class="content">
+<!-- Contenido principal -->
+<div class="content">
     <h2>Bienvenido a la Página del TFG</h2>
     <p class="text">
-      Esta página ofrece toda la información necesaria para entender y realizar con éxito el Trabajo Fin de Grado en la
-      Facultad de Informática de la UPV/EHU. Aquí encontrarás guías, recursos, y un área de autoevaluación para ayudarte
-      en cada etapa del proceso.
+        Esta página ofrece toda la información necesaria para entender y realizar con éxito el Trabajo Fin de Grado en
+        la
+        Facultad de Informática de la UPV/EHU. Aquí encontrarás guías, recursos, y un área de autoevaluación para
+        ayudarte
+        en cada etapa del proceso.
     </p>
     <h4><strong>Apartados</strong></h4>
 
     <div class="container my-5">
-      <div class="row text-center">
-        <div class="col-md-3">
-          <img src="/images/Normativa.jpg" alt="Imagen 1" class="img-fluid rounded">
-          <a href="Normativa.html">
-            <p class="mt-2">Normativa</p>
-          </a>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <a href="informacion.html">
+                    <img src="/images/Normativa.jpg" alt="Imagen 1" class="img-fluid rounded">
+                    <p class="mt-2">Normativa</p>
+                </a>
 
+            </div>
+
+            <div class="col-md-3">
+                <a href="informacion.html#collapseTwo">
+                    <img src="/images/Inscripcion.jpg" alt="Imagen 1" class="img-fluid rounded">
+                    <p class="mt-2">Matriculación e Inscripción</p>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="informacion.html#collapseThree">
+                    <img src="/images/Calendario.png" alt="Imagen 2" class="img-fluid rounded">
+                    <p class="mt-2">Calendario de Convocatorias</p>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="informacion.html#collapseFour">
+                    <img src="/images/TFGAnteriores.jpg" alt="Imagen 3" class="img-fluid rounded">
+                    <p class="mt-2">TFG Anteriores</p>
+                </a>
+            </div>
         </div>
-
-        <div class="col-md-3">
-
-          <img src="/images/Inscripcion.jpg" alt="Imagen 1" class="img-fluid rounded">
-          <a href="Normativa.html">
-            <p class="mt-2">Matriculación e Inscripción</p>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-
-          <img src="/images/Calendario.png" alt="Imagen 2" class="img-fluid rounded">
-
-          <a href="Normativa.html">
-            <p class="mt-2">Calendario de Convocatorias</p>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-
-          <img src="/images/TFGAnteriores.jpg" alt="Imagen 3" class="img-fluid rounded">
-
-          <a href="Normativa.html">
-            <p class="mt-2">TFG Anteriores</p>
-          </a>
-        </div>
-      </div>
     </div>
     <footer class="footer mt-auto py-3">
-      <hr>
-      <div class="container text-center">
-          <span>informaciontfg@upv.ehu.eus</span> &nbsp; | &nbsp; <span>+34 673 08 91 13</span>
-      </div>
-  </footer>
+        <hr>
+        <div class="container text-center">
+            <span>informaciontfg@upv.ehu.eus</span> &nbsp; | &nbsp; <span>+34 673 08 91 13</span>
+        </div>
+    </footer>
 
-  </div>
+</div>
 
 
-
-  <!-- JavaScript de Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- JavaScript personalizado -->
-  <script src="scripts.js"></script>
+<!-- JavaScript de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JavaScript personalizado -->
+<script src="scripts.js"></script>
 
 </body>
 
