@@ -26,3 +26,40 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+document.getElementById('evaluation-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevenir envío del formulario
+
+  let score = 0;
+  let totalQuestions = 10; // Total de preguntas
+
+  // Calcular puntuación
+  for (let i = 1; i <= totalQuestions; i++) {
+      let selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+      if (selectedOption && selectedOption.value === 'correct') {
+          score++;
+      }
+  }
+
+  // Calcular el porcentaje
+  let percentage = (score / totalQuestions) * 100;
+
+  // Mostrar resultados
+  document.getElementById('score').textContent = `Puntuación: ${score} de ${totalQuestions} (${percentage.toFixed(2)}%)`;
+  
+  let explanation;
+  if (percentage === 100) {
+      explanation = "¡Felicidades! Has acertado todas las preguntas.";
+  } else if (percentage >= 80) {
+      explanation = "Muy bien, tienes un gran conocimiento del TFG.";
+  } else if (percentage >= 50) {
+      explanation = "Estás en el buen camino, pero aún puedes mejorar.";
+  } else {
+      explanation = "Parece que necesitas revisar algunos aspectos del TFG.";
+  }
+  document.getElementById('explanation').textContent = explanation;
+
+  // Ocultar el formulario y mostrar los resultados
+  document.getElementById('evaluation-form').style.display = 'none';
+  document.getElementById('result').style.display = 'block';
+});

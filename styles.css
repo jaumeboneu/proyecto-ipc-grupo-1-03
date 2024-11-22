@@ -138,3 +138,34 @@ h4, h2 {
   text-decoration: underline; /* Subraya el texto */
   background-color: #000; /* Opcional: agrega un fondo oscuro para resaltar */
 }
+
+.question {
+  margin-bottom: 20px;
+}
+.required {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e7f3fe;
+  border: 1px solid #b3d7ff;
+  border-radius: 5px;
+  display: none;
+}

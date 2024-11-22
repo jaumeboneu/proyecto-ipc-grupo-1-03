@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Autoevaluación</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -51,9 +51,55 @@
 <!-- Contenido principal -->
 <div class="content">
     <p>
-        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+        Realiza este test de autoevaluación para comprobar qué tan bien conoces la información sobre el TFG en la UPV/EHU.
     </p>
+    <form id="evaluation-form">
+        <div class="question">
+            <label>1. ¿La normativa del TFG está bien explicada y actualizada?<span class="required">*</span></label><br>
+            <input type="radio" name="q1" value="correct"> Sí, la normativa está completamente explicada y es fácil de entender.<br>
+            <input type="radio" name="q1" value="wrong"> Parcialmente, algunas partes de la normativa no están claras o faltan detalles.<br>
+            <input type="radio" name="q1" value="wrong"> No, la normativa es confusa o no está actualizada.<br>
+        </div>
+    
+        <div class="question">
+            <label>2. ¿Se explica claramente el proceso de matriculación e inscripción en el TFG?<span class="required">*</span></label><br>
+            <input type="radio" name="q2" value="correct"> Sí, el proceso de matriculación e inscripción está detallado paso a paso.<br>
+            <input type="radio" name="q2" value="wrong"> Solo se menciona de forma general el proceso de inscripción, pero faltan detalles.<br>
+            <input type="radio" name="q2" value="wrong"> No, la información sobre matriculación e inscripción es insuficiente o inexistente.<br>
+        </div>
+    
+        <div class="question">
+            <label>3. ¿El calendario de convocatorias está disponible y es fácil de encontrar?<span class="required">*</span></label><br>
+            <input type="radio" name="q3" value="correct"> Sí, el calendario está claramente visible y actualizado.<br>
+            <input type="radio" name="q3" value="wrong"> El calendario existe, pero es difícil de encontrar o falta información actualizada.<br>
+            <input type="radio" name="q3" value="wrong"> No, no se proporciona un calendario de convocatorias.<br>
+        </div>
+    
+        <div class="question">
+            <label>4. ¿La sección de recopilación de TFGs anteriores es accesible y contiene ejemplos útiles?</label><br>
+            <input type="radio" name="q4" value="correct"> Sí, hay una buena cantidad de ejemplos y son fáciles de acceder.<br>
+            <input type="radio" name="q4" value="wrong"> Hay algunos ejemplos disponibles, pero no son suficientes o no están organizados.<br>
+            <input type="radio" name="q4" value="wrong"> No, no se ofrece acceso a TFGs anteriores.<br>
+        </div>
+    
+        <div class="question">
+            <label>5. ¿La recopilación de TFGs anteriores incluye una variedad de temas y formatos que pueden servir de guía para los estudiantes?</label><br>
+            <input type="radio" name="q5" value="correct"> Sí, la variedad de temas es amplia y los formatos están bien estructurados.<br>
+            <input type="radio" name="q5" value="wrong"> Hay algunos ejemplos de diferentes temas, pero la variedad es limitada.<br>
+            <input type="radio" name="q5" value="wrong"> No, la recopilación es muy básica o no está disponible.<br>
+        </div>
 
+        <!-- Más preguntas aquí... -->
+    
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+
+    <!-- Div de resultado -->
+    <div id="result" class="mt-4" style="display: none;">
+        <h4>Resultado:</h4>
+        <p id="score"></p>
+        <p id="explanation"></p>
+    </div>
 </div>
 
 <footer class="footer mt-auto py-3">
