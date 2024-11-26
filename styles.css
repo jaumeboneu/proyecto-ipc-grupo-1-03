@@ -87,6 +87,11 @@
   cursor: pointer;
 }
 
+.hero-header a {
+  color: white;
+  text-decoration: none;
+}
+
 .hero-header h1 {
   margin-left: 10px;
   font-size: 1.5em;
