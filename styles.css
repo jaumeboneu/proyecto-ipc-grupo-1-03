@@ -117,7 +117,7 @@ h4, h2 {
 
 .footer {
   font-family: Arial, sans-serif; 
-  font-size: 16px; 
+  font-size: 14px; 
   color: black; 
 }
 
@@ -136,7 +136,7 @@ h4, h2 {
   color: white !important; /* Cambia el color del texto */
   font-weight: bold; /* Pone el texto en negrita */
   text-decoration: underline; /* Subraya el texto */
-  background-color: #000; /* Opcional: agrega un fondo oscuro para resaltar */
+  /*background-color: #000;  Opcional: agrega un fondo oscuro para resaltar */
 }
 
 .question {

@@ -38,6 +38,8 @@ document.getElementById('evaluation-form').addEventListener('submit', function(e
       let selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
       if (selectedOption && selectedOption.value === 'correct') {
           score++;
+      } else if (selectedOption && selectedOption.value === 'mid') {
+          score = score + 0.5;
       }
   }
 
@@ -45,7 +47,7 @@ document.getElementById('evaluation-form').addEventListener('submit', function(e
   let percentage = (score / totalQuestions) * 100;
 
   // Mostrar resultados
-  document.getElementById('score').textContent = `Puntuación: ${score} de ${totalQuestions} (${percentage.toFixed(2)}%)`;
+  document.getElementById('score').textContent = `Puntuación: (${percentage.toFixed(2)}%)`;
   
   let explanation;
   if (percentage === 100) {
